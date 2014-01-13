@@ -17,12 +17,6 @@ Requires Tcl/Tk
 (gnu/linux folks, install tcl with your distribution's package manager.
 win/mac folks, get it here: http://www.activestate.com/activetcl )
 
-Installation:
-Linux/Mac - run the install.sh script.
-Windows - just stick the pacecalc.exe file anywhere and click on it to run it.
-You can make a desktop shortcut to it.
-Heck, you can put it on your Desktop
-
 Also packaged as part of TclRunlog
 http://tonyb.us/tclrunlog
 
