@@ -103,6 +103,7 @@ proc calc1 {} {
 	set pace [clock format $pacesex -gmt 1 -format %M:%S]
 	
 	toplevel .calc
+	wm title .calc "Pace"
 	grid [ttk::label .calc.pace -text "Pace: $pace min/mi."]\
 	[ttk::button .calc.ok -text "ok" -command {destroy .calc}]
 
@@ -121,6 +122,7 @@ proc calc2 {} {
 	set totime [clock format $tsex -gmt 1 -format %H:%M:%S]
 
 	toplevel .calc2
+	wm title .calc2 "Total Time"
 	grid [ttk::label .calc2.l -text "Total time: $totime"]\
 	[ttk::button .calc2.b -text "ok" -command {destroy .calc2}]
 
@@ -131,6 +133,7 @@ proc calcal {} {
 	set cals [expr {round($cals)}]
 
 	toplevel .ccalc
+	wm title .ccalc "Calories"
 	grid [ttk::label .ccalc.cal -text "Calories burned (approx.): $cals"]\
 	[ttk::button .ccalc.b -text "ok" -command {destroy .ccalc}]
 }
